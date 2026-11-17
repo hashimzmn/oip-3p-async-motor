@@ -1,19 +1,13 @@
-# Open Industry Project at LIT CPS LAB
-
-
-Parts implemented in this branch:
-
-Three Phase Asynchronous Motor
+# An Implementation of a Three Phase Asynchronous Motor Part in Open Industry Project 
 
 # Introduction
-This branch provides the components/scripts necessary to implement a three-phase asynchronous motor part in Open Industry Project.
+This repo provides the components/scripts necessary to implement a three-phase asynchronous motor part in Open Industry Project.
 
 The 3D model of the part was obtained from:
 
 [Rossi HB 63–180L asynchronous three-phase motor CAD model](https://rossi.partcommunity.com/3d-cad-models/hb-63-180l-asynchronous-three-phase-motor-rossi?info=rossi%2Ftx11_motori%2Fasync_3_phase%2Fhb_asmtab.prj)
 
 A ready to be imported model of the motor is provided in provided in [parts/](./parts/).
-
 
 The following is the godot node-tree of the implemented part:
 
