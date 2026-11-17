@@ -93,7 +93,7 @@ The `set_running()` function toggels the motor start/stop.
 The motor torque is calculated from the current rotor speed using a three-region piecewise torque-speed curve shown:
 
 <p align="center">
-<img src="/motor_torque_speed_characteristic.png"
+<img src=".src/Motor/motor_torque_speed_characteristic.png"
      alt="Motor torque-speed characteristic"
      width="700">
 </p>
