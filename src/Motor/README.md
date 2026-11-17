@@ -132,29 +132,15 @@ where:
 
 Rearranging gives the angular acceleration:
 
-$
-\dot{\omega}
-=
-\frac{T_m-T_L}{J}.
-$
+$ \dot{\omega} = \frac{T_m-T_L}{J}. $
 
 Here, the differential equation is solved/approximated using the explicit Euler method:
 
-$$
-\omega_{k+1}
-=
-\omega_k
-+
-\frac{T_{m,k}-T_L}{J}\Delta t.
-$$
+$\omega_{k+1} = \omega_k + \frac{T_{m,k}-T_L}{J}\Delta t.$
 
 The updated angular speed is then converted from radians per second to revolutions per minute:
 
-$$
-n
-=
-\omega\frac{60}{2\pi}.
-$$
+$ n =\omega\frac{60}{2\pi}. $
 
 The rotor speed is limited to the synchronous speed `n_s`.
 
@@ -166,11 +152,7 @@ The motor current is estimated from the current rotor speed. This is done by int
 
 The starting current is calculated as:
 
-$$
-I_{\mathrm{st}}
-=
-k_{\mathrm{st}} I_r,
-$$
+$ I_{\mathrm{st}} = k_{\mathrm{st}} I_r, $
 
 where:
 
@@ -180,11 +162,7 @@ where:
 
 The slip is defined as:
 
-$$
-s
-=
-1-\frac{n}{n_s},
-$$
+$ s = 1-\frac{n}{n_s}, $
 
 where:
 
@@ -193,30 +171,15 @@ where:
 
 Using the square root of the slip, the motor current is modelled as:
 
-$$
-I(n)
-=
-I_r
-+
-\left(
-I_{\mathrm{st}}-I_r
-\right)
-\sqrt{
-1-\frac{n}{n_s}
-}.
-$$
+$ I(n) = I_r + \left( I_{\mathrm{st}}-I_r \right) \sqrt{1-\frac{n}{n_s}}. $
 
 At standstill, where $n=0$, the current is equal to the starting current:
 
-$$
-I(0)=I_{\mathrm{st}}.
-$$
+$ I(0)=I_{\mathrm{st}}. $
 
 As the rotor speed approaches the synchronous speed, the slip approaches zero and the current approaches the rated current:
 
-$$
-I(n_s)=I_r.
-$$
+$ I(n_s)=I_r. $
 
 When the motor is switched off and the rotor has reached rest, the script manually sets the current to zero.
 
