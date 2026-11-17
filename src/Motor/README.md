@@ -121,9 +121,7 @@ With the torque-speed model determining the motor torque generated at the curren
 
 The rotor dynamics are described by the first-order differential equation:
 
-$$
-J\dot{\omega}=T_m-T_L,
-$$
+$J\dot{\omega}=T_m-T_L,$
 
 where:
 
@@ -134,11 +132,11 @@ where:
 
 Rearranging gives the angular acceleration:
 
-$$
+$
 \dot{\omega}
 =
 \frac{T_m-T_L}{J}.
-$$
+$
 
 Here, the differential equation is solved/approximated using the explicit Euler method:
 
