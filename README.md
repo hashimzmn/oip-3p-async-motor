@@ -36,4 +36,4 @@ Two scripts:
 are provided in [src/Motor/](./src/Motor/). Please refer to the README in the corresponding directory for a detailed overview.
 
 
-For a more, overall, detailed overview of the implementation please refer to the [seminar report](./docs/Zaman-seminar_report.pdf) provided.
+
